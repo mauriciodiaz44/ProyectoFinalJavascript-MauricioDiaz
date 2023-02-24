@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/single_logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto Final - Mauricio Diaz</title>
+</head>
+<body class="light-body">
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="header">
+                    <div class="header-logo">
+                        <a href="#" class="header-url">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <form action="" id="search-form">
+                            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                            <input placeholder="Buscar productos" type="search" autocomplete="off" id="search-input" class="header-search-input">
+                            <input type="submit" class="header-search-submit" id="search-submit" value="Buscar">
+                        </form>
+                    </div>
+                    <div class="header-actions">
+                        <button id="header-carrito" class="header-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                            <img src="./assets/images/cart.svg" alt="cart" height="32">
+                            <span id="header-numerito">0</span>
+                        </button>
+                        <label class="switch">
+                            <input id="darkmode" type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div id="carrito-header" class="offcanvas-header">
+                <div id="carrito-header-container" class="carrito-header-container">
+                    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Carrito de compras</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            </div>
+            <div id="carrito-container" class="offcanvas-body">
+            </div>
+            <div id="carrito-footer" class="offcanvas-footer disabled">
+                <div id="carrito-footer-container" class="carrito-footer-container">
+                    <div class="offcanvas-total">
+                        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Subtotal: <span id="carrito-total">$ 0</span></h5>
+                    </div>
+                    <div class="offcanvas-buttons">
+                        <button id="carrito-finalizar" class="boton" data-bs-toggle="modal">Finalizar compra</button>
+                        <button id="carrito-vaciar" class="boton boton-outline" type="button">Vaciar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <!-- Seccion de productos -->
+            <section class="main-products">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner">
+                            <h1 id="banner-title" class="banner-title">PRODUCTOS</h1>
+                            <div id="products-results" class="products-results">
+                                <h3 id="results"></h3>
+                                <p id="results-p"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category col-12 col-md-4">
+                        <div class="category-container">
+                            <h1 class="category-title">Categorías</h1>
+                            <div class="accordion">
+                                <div id="todos-los-productos" class="accordion-header">
+                                    <span class="accordion-header-title">Todos los productos</span>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Almacenamiento</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="rígidos" class="accordion-text">- Disco Rígido</p>
+                                        <p id="solidos" class="accordion-text">- Disco Sólidos SSD</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Fuentes</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="fuentes" class="accordion-text">- Fuentes de alimentación</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Gabinetes</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="gabinetes" class="accordion-text">- Gabinetes</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Memorias RAM</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="memorias" class="accordion-text">- Memorias</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Mothers</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="mothersamd" class="accordion-text">- Mothers AMD</p>
+                                        <p id="mothersintel" class="accordion-text">- Mothers Intel</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Placa de video</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="radeon" class="accordion-text">- Radeon AMD</p>
+                                        <p id="geforce" class="accordion-text">- Nvidia GeForce</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Procesadores</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="amd" class="accordion-text">- Procesadores AMD</p>
+                                        <p id="intel" class="accordion-text">- Procesadores Intel</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="accordion-header">
+                                        <span class="accordion-header-title">Refrigeración</span>
+                                        <i class="bi bi-chevron-down accordion-header-icon"></i>
+                                    </div>
+                                    <div class="accordion-desc">
+                                        <p id="coolerfan" class="accordion-text">- Coolers FAN</p>
+                                        <p id="coolercpu" class="accordion-text">- Coolers CPU</p>
+                                        <p id="pasta" class="accordion-text">- Pasta termica</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products col-12 col-md-8">
+                        <div id="products-views" class="products-views">
+                            <div class="products-filter">
+                                <select id="select-filter" class="form-select" aria-label="Default select example">
+                                    <option selected>Ordenar por</option>
+                                    <option value="1">Alfabeticamente A-Z</option>
+                                    <option value="2">Mayor precio</option>
+                                    <option value="3">Menor precio</option>
+                                </select>
+                            </div>
+                            <div class="products-buttons">
+                                <button id="view-grid" class="view-grid"><i class="bi bi-grid-3x3-gap"></i></button>
+                                <button id="view-list" class="view-list view-active"><i class="bi bi-list-task"></i></button>
+                            </div>
+                        </div>
+                        <!-- Contenedor de productos -->
+                        <div id="products-container" class="products-container products-list">
+                            <div class="card-loading">
+                                <div class="card-thumbnail"></div>
+                                <p></p>
+                                <h1></h1>
+                                <div class="card-button"></div>
+                            </div>
+                            <div class="card-loading">
+                                <div class="card-thumbnail"></div>
+                                <p></p>
+                                <h1></h1>
+                                <div class="card-button"></div>
+                            </div>
+                            <div class="card-loading">
+                                <div class="card-thumbnail"></div>
+                                <p></p>
+                                <h1></h1>
+                                <div class="card-button"></div>
+                            </div>
+                            <div class="card-loading">
+                                <div class="card-thumbnail"></div>
+                                <p></p>
+                                <h1></h1>
+                                <div class="card-button"></div>
+                            </div>
+                            <div class="card-loading">
+                                <div class="card-thumbnail"></div>
+                                <p></p>
+                                <h1></h1>
+                                <div class="card-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modal's de bootstrap -->
+            <section class="supermodal">
+                <div class="modal" id="compraFinalizada" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel1">Detalles de facturacion</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <form action="" class="row g-3 needs-validation" novalidate>
+                                        <div class="col-lg-6 col-md-12">
+                                            <label for="validationCustom01" class="form-label">Nombre *</label>
+                                            <input type="text" class="form-control" id="validationCustom01" value="Cosme" required>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <label for="validationCustom02" class="form-label">Apellido *</label>
+                                            <input type="text" class="form-control" id="validationCustom02" value="Fulanito" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="exampleInputEmail1" class="form-label">Email *</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="cosmefulanito@outlook.com" required>
+                                            <div class="invalid-feedback">
+                                              Por favor, ingrese un email valido.
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="validationCustom03" class="form-label">Ciudad *</label>
+                                            <input type="text" class="form-control" id="validationCustom03" value="Massachusetts" required>
+                                            <div class="invalid-feedback">
+                                              Por favor, ingrese una ciudad valida.
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="validationCustom04" class="form-label">Region / Provincia *</label>
+                                            <select class="form-select" id="validationCustom04" required>
+                                              <option selected value="Springfield">Springfield</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                              Por favor, elija una opcion valida.
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="validationCustom05" class="form-label">Codigo postal *</label>
+                                            <input type="text" class="form-control" id="validationCustom05" value="12000" required>
+                                            <div class="invalid-feedback">
+                                              Ingrese un codigo postal valido.
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <label for="validationCustom06" class="form-label">Direccion *</label>
+                                            <input type="text" class="form-control" id="validationCustom06" value="Av. Siempreviva 742" required>
+                                            <div class="invalid-feedback">
+                                                Por favor, ponga una direccion valida.
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <label for="validationCustom07" class="form-label">Departamento</label>
+                                            <input type="text" class="form-control" id="validationCustom07" value="Casa familiar">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="validationCustom08" class="form-label">Telefono *</label>
+                                            <input type="tel" class="form-control" id="validationCustom08" value="+48 999 9999" required>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingrese un numero de telefono valido.
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Notas sobre su pedido</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer border-0">
+                                            <button class="boton boton-outline" data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="submit" class="boton">Siguiente</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="compraFinalizada2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card mb-3">
+                                            <h5 class="card-header">Metodo de pago</h5>
+                                            <div class="card-body">
+                                                <div class="card-container">
+                                                    <div class="front">
+                                                        <div class="front-image">
+                                                            <img src="./assets/images/chip.png" alt="chip">
+                                                            <img src="./assets/images/visa.png" alt="visa">
+                                                        </div>
+                                                        <div class="d-flex align-items-center card-box">
+                                                            <div id="card-number" class="card-number-box">0009 3999 1100 4444</div>
+                                                            <div class="box ms-auto">
+                                                                <span>CVC</span>
+                                                                <div id="card-cvc" class="cvc">334</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="box">
+                                                                <span>Nombre del titular</span>
+                                                                <div id="card-holder-name" class="card-holder-name">Cosme Fulanito</div>
+                                                            </div>
+                                                            <div class="box">
+                                                                <span>Desde / Hasta</span>
+                                                                <div class="expiration">
+                                                                    <span id="card-month" class="exp-month">05</span>
+                                                                    <span>/</span>
+                                                                    <span id="card-year" class="exp-year">2025</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form action="" class="row justify-content-between g-3" id="metodo-de-pago" novalidate>
+                                                    <div class="col-12">
+                                                        <label for="numero-tarjeta" class="form-label">Numero de tarjeta</label>
+                                                        <input type="text" class="form-control" id="numero-tarjeta" value="0009 3999 1100 4444" maxlength="16" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="titular-tarjeta" class="form-label">Titular de la tarjeta</label>
+                                                        <input type="text" class="form-control" id="titular-tarjeta" value="Cosme Fulanito" maxlength="21" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="dni-tarjeta" class="form-label">DNI</label>
+                                                        <input type="text" class="form-control" id="dni-tarjeta" value="29105985" required>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <label for="month" class="form-label">Fecha de expiracion</label>
+                                                        <div class="selects d-flex align-items-center justify-content-between gap-2">
+                                                            <select class="form-select" id="month-tarjeta" required>
+                                                                <option value="Mes" disabled>Mes</option>
+                                                                <option value="01">01</option>
+                                                                <option value="02">02</option>
+                                                                <option value="03">03</option>
+                                                                <option value="04">04</option>
+                                                                <option value="05" selected>05</option>
+                                                                <option value="06">06</option>
+                                                                <option value="07">07</option>
+                                                                <option value="08">08</option>
+                                                                <option value="09">09</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                            </select>
+                                                            <select class="form-select" id="year-tarjeta" required>
+                                                                <option value="Año" disabled>Año</option>
+                                                                <option value="2023">2023</option>
+                                                                <option value="2024">2024</option>
+                                                                <option value="2025" selected >2025</option>
+                                                                <option value="2026">2026</option>
+                                                                <option value="2027">2027</option>
+                                                                <option value="2028">2028</option>
+                                                                <option value="2029">2029</option>
+                                                                <option value="2030">2030</option>
+                                                                <option value="2031">2031</option>
+                                                            </select> 
+                                                        </div>     
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <label for="cvc-tarjeta" class="form-label">CVC</label>
+                                                        <input type="text" class="form-control" id="cvc-tarjeta" value="334" maxlength="3" required>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="card">
+                                            <h5 class="card-header">Tu pedido</h5>
+                                            <div class="table-container">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col">Productos</th>
+                                                        <th scope="col">Subtotal</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody id="table-container">
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Total</th>
+                                                            <td>
+                                                                <strong><span id="table-total">$ 19000</span></strong>
+                                                            </td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="boton boton-outline" data-bs-dismiss="modal">Cancelar</button>
+                            <button class="boton" id="compra-exitosa" data-bs-dismiss="modal">Finalizar compra</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="compraFinalizada3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel3">Compra realizada</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="text-center mb-3">
+                                    <img src="./assets/images/check-2.svg" alt="check" height="100">
+                                    <h5 class="mb-2">¡Listo!</h5>
+                                    <p class="mb-2">La compra de <strong><span id="exito-total"></span></strong> se realizó con éxito.</p>
+                                    <button class="boton" data-bs-dismiss="modal">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Clase constructora -->
+    <script src="./js/class.js"></script>
+    <!-- Boostrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert library -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ToastifyJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Script de eventos -->
+    <script src="./js/events.js"></script>
+    <!-- Script main principal -->
+    <script src="./js/main.js"></script>
+    <!-- Script del carrito -->
+    <script src="./js/carrito.js"></script>
+</body>
+</html>
