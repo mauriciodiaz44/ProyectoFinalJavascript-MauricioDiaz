@@ -114,7 +114,7 @@ function agregarAlCarrito(e){
   Toastify({
     text: `${productoAgregado.titulo} se ha agregado al carrito.`,
     className: "notif",
-    avatar: '../assets/images/check.svg',
+    avatar: './assets/images/check.svg',
     duration: 2000,
     newWindow: true,
     close: false,
