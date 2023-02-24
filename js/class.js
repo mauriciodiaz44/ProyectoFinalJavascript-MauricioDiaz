@@ -17,7 +17,7 @@ class Producto {
 const productos = []
 
 const cargadorProductos = async () => {
-  const response = await fetch("../productos.json");
+  const response = await fetch("productos.json");
   const data = await response.json();
 
   for(let producto of data) {
