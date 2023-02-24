@@ -2,7 +2,7 @@
     {
       "id": "01",
       "titulo": "Disco Rígido WD-BLUE 1TB SATA",
-      "imagen": "../assets/images/productos/almacenamiento/WD-BLUE-1TB.jpg",
+      "imagen": "./assets/images/productos/almacenamiento/WD-BLUE-1TB.jpg",
       "categoria": {
         "nombre": "DISCOS RÍGIDOS",
         "id": "rígidos"
@@ -12,7 +12,7 @@
     {
       "id": "02",
       "titulo": "Disco Rígido Seagate 1TB SATA",
-      "imagen": "../assets/images/productos/almacenamiento/SEAGATE-1TB.jpg",
+      "imagen": "./assets/images/productos/almacenamiento/SEAGATE-1TB.jpg",
       "categoria": {
         "nombre": "DISCOS RÍGIDOS",
         "id": "rígidos"
@@ -22,7 +22,7 @@
     {
       "id": "03",
       "titulo": "Disco Rígido WD-BLUE 2TB SATA",
-      "imagen": "../assets/images/productos/almacenamiento/WD-BLUE-2TB.jpg",
+      "imagen": "./assets/images/productos/almacenamiento/WD-BLUE-2TB.jpg",
       "categoria": {
         "nombre": "DISCOS RÍGIDOS",
         "id": "rígidos"
@@ -32,7 +32,7 @@
     {
       "id": "04",
       "titulo": "Disco Solido SSD Gigabyte 120GB",
-      "imagen": "../assets/images/productos/almacenamiento/SOLIDO-GIGABYTE-120.png",
+      "imagen": "./assets/images/productos/almacenamiento/SOLIDO-GIGABYTE-120.png",
       "categoria": {
         "nombre": "DISCOS SOLIDOS",
         "id": "solidos"
@@ -42,7 +42,7 @@
     {
       "id": "05",
       "titulo": "Disco Solido SSD Adata 240GB",
-      "imagen": "../assets/images/productos/almacenamiento/SOLIDO-ADATA-240.jpg",
+      "imagen": "./assets/images/productos/almacenamiento/SOLIDO-ADATA-240.jpg",
       "categoria": {
         "nombre": "DISCOS SOLIDOS",
         "id": "solidos"
@@ -52,7 +52,7 @@
     {
       "id": "06",
       "titulo": "Disco Solido SSD Crucial 500GB",
-      "imagen": "../assets/images/productos/almacenamiento/SOLIDO-CRUCIAL-500.jpg",
+      "imagen": "./assets/images/productos/almacenamiento/SOLIDO-CRUCIAL-500.jpg",
       "categoria": {
         "nombre": "DISCOS SOLIDOS",
         "id": "solidos"
@@ -62,7 +62,7 @@
     {
       "id": "07",
       "titulo": "Fuente Redragon 500W 80+ Bronze",
-      "imagen": "../assets/images/productos/fuentes/FUENTE-REDRAGON-500W-BRONCE.jpg",
+      "imagen": "./assets/images/productos/fuentes/FUENTE-REDRAGON-500W-BRONCE.jpg",
       "categoria": {
         "nombre": "FUENTES DE ALIMENTACION",
         "id": "fuentes"
@@ -72,7 +72,7 @@
     {
       "id": "08",
       "titulo": "Fuente ASUS-TUF 550W 80+ Bronze",
-      "imagen": "../assets/images/productos/fuentes/FUENTE-ASUS-550W-BRONCE.jpg",
+      "imagen": "./assets/images/productos/fuentes/FUENTE-ASUS-550W-BRONCE.jpg",
       "categoria": {
         "nombre": "FUENTES DE ALIMENTACION",
         "id": "fuentes"
@@ -82,7 +82,7 @@
     {
       "id": "09",
       "titulo": "Fuente ASUS-TUF 750W 80+ Bronze",
-      "imagen": "../assets/images/productos/fuentes/FUENTE-ASUS-750W-BRONCE.jpg",
+      "imagen": "./assets/images/productos/fuentes/FUENTE-ASUS-750W-BRONCE.jpg",
       "categoria": {
         "nombre": "FUENTES DE ALIMENTACION",
         "id": "fuentes"
@@ -92,7 +92,7 @@
     {
       "id": "10",
       "titulo": "Fuente Gigabyte 850W 80+ Gold",
-      "imagen": "../assets/images/productos/fuentes/FUENTE-GIGABYTE-850W-GOLD.jpg",
+      "imagen": "./assets/images/productos/fuentes/FUENTE-GIGABYTE-850W-GOLD.jpg",
       "categoria": {
         "nombre": "FUENTES DE ALIMENTACION",
         "id": "fuentes"
@@ -102,7 +102,7 @@
     {
       "id": "11",
       "titulo": "Fuente ASUS-ROG-THOR 850W 80+ Platinum",
-      "imagen": "../assets/images/productos/fuentes/FUENTE-ASUSROG-850W-PLATINUM.jpg",
+      "imagen": "./assets/images/productos/fuentes/FUENTE-ASUSROG-850W-PLATINUM.jpg",
       "categoria": {
         "nombre": "FUENTES DE ALIMENTACION",
         "id": "fuentes"
@@ -112,7 +112,7 @@
     {
       "id": "12",
       "titulo": "Gabinete Deepcool MATREXX 50 ADD-RGB 4F",
-      "imagen": "../assets/images/productos/gabinetes/DEEPCOOL-MATREXX-50.jpg",
+      "imagen": "./assets/images/productos/gabinetes/DEEPCOOL-MATREXX-50.jpg",
       "categoria": {
         "nombre": "GABINETES",
         "id": "gabinetes"
@@ -122,7 +122,7 @@
     {
       "id": "13",
       "titulo": "Gabinete Sentey F10 RGB M-ATX",
-      "imagen": "../assets/images/productos/gabinetes/SENTEY-F10-RGB.jpg",
+      "imagen": "./assets/images/productos/gabinetes/SENTEY-F10-RGB.jpg",
       "categoria": {
         "nombre": "GABINETES",
         "id": "gabinetes"
@@ -132,7 +132,7 @@
     {
       "id": "14",
       "titulo": "Gabinete Silverstone FARA-R1 BLACK",
-      "imagen": "../assets/images/productos/gabinetes/SILVERSTONE-FARA-BLACK.jpg",
+      "imagen": "./assets/images/productos/gabinetes/SILVERSTONE-FARA-BLACK.jpg",
       "categoria": {
         "nombre": "GABINETES",
         "id": "gabinetes"
@@ -142,7 +142,7 @@
     {
       "id": "15",
       "titulo": "Memoria Adata DDR4 8GB 3200MHz",
-      "imagen": "../assets/images/productos/memoria/MEMORIA-ADATA-8GB-DDR4.jpg",
+      "imagen": "./assets/images/productos/memoria/MEMORIA-ADATA-8GB-DDR4.jpg",
       "categoria": {
         "nombre": "MEMORIAS RAM",
         "id": "memorias"
@@ -152,7 +152,7 @@
     {
       "id": "16",
       "titulo": "Memoria Corsair DDR4 16GB (2x8GB) 3200MHz RGB",
-      "imagen": "../assets/images/productos/memoria/MEMORIA-CORSAIR-2X8GB-DDR4.jpg",
+      "imagen": "./assets/images/productos/memoria/MEMORIA-CORSAIR-2X8GB-DDR4.jpg",
       "categoria": {
         "nombre": "MEMORIAS RAM",
         "id": "memorias"
@@ -162,7 +162,7 @@
     {
       "id": "17",
       "titulo": "Memoria Kingston DDR4 16GB 3200MHz RGB",
-      "imagen": "../assets/images/productos/memoria/MEMORIA-KINGSTON-16GB-DDR4.jpg",
+      "imagen": "./assets/images/productos/memoria/MEMORIA-KINGSTON-16GB-DDR4.jpg",
       "categoria": {
         "nombre": "MEMORIAS RAM",
         "id": "memorias"
@@ -172,7 +172,7 @@
     {
       "id": "18",
       "titulo": "Mother Gigabyte GA-A320M-H AM4",
-      "imagen": "../assets/images/productos/mothers/GIGABYTE-GA-A320M-H-AM4.jpg",
+      "imagen": "./assets/images/productos/mothers/GIGABYTE-GA-A320M-H-AM4.jpg",
       "categoria": {
         "nombre": "MOTHERS AMD",
         "id": "mothersamd"
@@ -182,7 +182,7 @@
     {
       "id": "19",
       "titulo": "Mother ASUS-ROG-STRIX B450-F GAMING-II AM4",
-      "imagen": "../assets/images/productos/mothers/ASUS-ROG-B450-F-AM4.jpg",
+      "imagen": "./assets/images/productos/mothers/ASUS-ROG-B450-F-AM4.jpg",
       "categoria": {
         "nombre": "MOTHERS AMD",
         "id": "mothersamd"
@@ -192,7 +192,7 @@
     {
       "id": "20",
       "titulo": "Mother MSI A520M-A PRO AM4",
-      "imagen": "../assets/images/productos/mothers/MSI-A520M-A-PRO-AM4.jpg",
+      "imagen": "./assets/images/productos/mothers/MSI-A520M-A-PRO-AM4.jpg",
       "categoria": {
         "nombre": "MOTHERS AMD",
         "id": "mothersamd"
@@ -202,7 +202,7 @@
     {
       "id": "21",
       "titulo": "Mother ASUS-PRIME Z690-P D4",
-      "imagen": "../assets/images/productos/mothers/ASUS-PRIME-Z690-P.jpg",
+      "imagen": "./assets/images/productos/mothers/ASUS-PRIME-Z690-P.jpg",
       "categoria": {
         "nombre": "MOTHERS INTEL",
         "id": "mothersintel"
@@ -212,7 +212,7 @@
     {
       "id": "22",
       "titulo": "Mother Gigabyte B560M-DS3H V2",
-      "imagen": "../assets/images/productos/mothers/GIGABYTE-B560M-DS3H.jpg",
+      "imagen": "./assets/images/productos/mothers/GIGABYTE-B560M-DS3H.jpg",
       "categoria": {
         "nombre": "MOTHERS INTEL",
         "id": "mothersintel"
@@ -222,7 +222,7 @@
     {
       "id": "23",
       "titulo": "Mother ASUS-ROG MAXIMUS-XIII HERO S1200",
-      "imagen": "../assets/images/productos/mothers/ASUS-ROG-MAXIMUS-XIII-HERO.jpg",
+      "imagen": "./assets/images/productos/mothers/ASUS-ROG-MAXIMUS-XIII-HERO.jpg",
       "categoria": {
         "nombre": "MOTHERS INTEL",
         "id": "mothersintel"
@@ -232,7 +232,7 @@
     {
       "id": "24",
       "titulo": "Placa de Video ASUS-TUF GeForce GTX 1660TI 6GB OC GDDR6",
-      "imagen": "../assets/images/productos/placas/GEFORCE-GTX-1660TI-TUF.jpg",
+      "imagen": "./assets/images/productos/placas/GEFORCE-GTX-1660TI-TUF.jpg",
       "categoria": {
         "nombre": "NVIDIA GEFORCE",
         "id": "geforce"
@@ -242,7 +242,7 @@
     {
       "id": "25",
       "titulo": "Placa de Video ZOTAC GeForce RTX 3070TI 8GB GDDR6 Trinity",
-      "imagen": "../assets/images/productos/placas/GEFORCE-RTX-3070TI-TRINITY.jpg",
+      "imagen": "./assets/images/productos/placas/GEFORCE-RTX-3070TI-TRINITY.jpg",
       "categoria": {
         "nombre": "NVIDIA GEFORCE",
         "id": "geforce"
@@ -252,7 +252,7 @@
     {
       "id": "26",
       "titulo": "Placa de Video PNY GeForce RTX 4090 24GB OC EPIC-X GDDR6",
-      "imagen": "../assets/images/productos/placas/GEFORCE-RTX-4090-PNY.jpg",
+      "imagen": "./assets/images/productos/placas/GEFORCE-RTX-4090-PNY.jpg",
       "categoria": {
         "nombre": "NVIDIA GEFORCE",
         "id": "geforce"
@@ -262,7 +262,7 @@
     {
       "id": "27",
       "titulo": "Placa de Video Gigabyte Radeon RX 6500XT 4GB GAMING-OC",
-      "imagen": "../assets/images/productos/placas/RADEON-RX-6500XT-GIGABYTE.jpg",
+      "imagen": "./assets/images/productos/placas/RADEON-RX-6500XT-GIGABYTE.jpg",
       "categoria": {
         "nombre": "RADEON AMD",
         "id": "radeon"
@@ -272,7 +272,7 @@
     {
       "id": "28",
       "titulo": "Placa de Video MSI Radeon RX 6500XT 4GB MECH 2X OC",
-      "imagen": "../assets/images/productos/placas/RADEON-RX-6500XT-MSI.jpg",
+      "imagen": "./assets/images/productos/placas/RADEON-RX-6500XT-MSI.jpg",
       "categoria": {
         "nombre": "RADEON AMD",
         "id": "radeon"
@@ -282,7 +282,7 @@
     {
       "id": "29",
       "titulo": "Placa de Video PowerColor Radeon RX 6700XT 12GB RED-DEVIL",
-      "imagen": "../assets/images/productos/placas/RADEON-RX-6700XT-POWERCOLOR.jpg",
+      "imagen": "./assets/images/productos/placas/RADEON-RX-6700XT-POWERCOLOR.jpg",
       "categoria": {
         "nombre": "RADEON AMD",
         "id": "radeon"
@@ -292,7 +292,7 @@
     {
       "id": "30",
       "titulo": "Procesador AMD Ryzen 5 5600X AM4 4.4GHz + COOLER",
-      "imagen": "../assets/images/productos/procesadores/RYZEN-5-5600X.jpg",
+      "imagen": "./assets/images/productos/procesadores/RYZEN-5-5600X.jpg",
       "categoria": {
         "nombre": "PROCESADORES AMD",
         "id": "amd"
@@ -302,7 +302,7 @@
     {
       "id": "31",
       "titulo": "Procesador AMD Ryzen 7 5700X AM4 4.6GHz - SIN COOLER",
-      "imagen": "../assets/images/productos/procesadores/RYZEN-7-5700X.jpg",
+      "imagen": "./assets/images/productos/procesadores/RYZEN-7-5700X.jpg",
       "categoria": {
         "nombre": "PROCESADORES AMD",
         "id": "amd"
@@ -312,7 +312,7 @@
     {
       "id": "32",
       "titulo": "Procesador AMD Ryzen 9 5900X AM4 4.8GHz - SIN COOLER",
-      "imagen": "../assets/images/productos/procesadores/RYZEN-9-5900X.jpg",
+      "imagen": "./assets/images/productos/procesadores/RYZEN-9-5900X.jpg",
       "categoria": {
         "nombre": "PROCESADORES AMD",
         "id": "amd"
@@ -322,7 +322,7 @@
     {
       "id": "33",
       "titulo": "Procesador Intel Core i3 12100 12th Gen S1700",
-      "imagen": "../assets/images/productos/procesadores/INTEL-I3-12100.jpg",
+      "imagen": "./assets/images/productos/procesadores/INTEL-I3-12100.jpg",
       "categoria": {
         "nombre": "PROCESADORES INTEL",
         "id": "intel"
@@ -332,7 +332,7 @@
     {
       "id": "34",
       "titulo": "Procesador Intel Core i5 12600KF 4.90GHz Turbo Socket 1700",
-      "imagen": "../assets/images/productos/procesadores/INTEL-I5-12600KF.jpg",
+      "imagen": "./assets/images/productos/procesadores/INTEL-I5-12600KF.jpg",
       "categoria": {
         "nombre": "PROCESADORES INTEL",
         "id": "intel"
@@ -342,7 +342,7 @@
     {
       "id": "35",
       "titulo": "Procesador Intel Core i7 12700K 5.0GHz Turbo Socket 1700",
-      "imagen": "../assets/images/productos/procesadores/INTEL-I7-12700K.jpg",
+      "imagen": "./assets/images/productos/procesadores/INTEL-I7-12700K.jpg",
       "categoria": {
         "nombre": "PROCESADORES INTEL",
         "id": "intel"
@@ -352,7 +352,7 @@
     {
       "id": "36",
       "titulo": "Cooler FAN ID-Cooling TF-12025-ARGB",
-      "imagen": "../assets/images/productos/refrigeración/TF-12025.jpg",
+      "imagen": "./assets/images/productos/refrigeración/TF-12025.jpg",
       "categoria": {
         "nombre": "COOLERS FAN",
         "id": "coolerfan"
@@ -362,7 +362,7 @@
     {
       "id": "37",
       "titulo": "Cooler FAN ID-Cooling TF-12025-ARGB SNOW",
-      "imagen": "../assets/images/productos/refrigeración/TF-12025-WHITE.jpg",
+      "imagen": "./assets/images/productos/refrigeración/TF-12025-WHITE.jpg",
       "categoria": {
         "nombre": "COOLERS FAN",
         "id": "coolerfan"
@@ -372,7 +372,7 @@
     {
       "id": "38",
       "titulo": "Cooler FAN Cooler Master MF120 S2",
-      "imagen": "../assets/images/productos/refrigeración/COOLERMASTER-MF120.jpg",
+      "imagen": "./assets/images/productos/refrigeración/COOLERMASTER-MF120.jpg",
       "categoria": {
         "nombre": "COOLERS FAN",
         "id": "coolerfan"
@@ -382,7 +382,7 @@
     {
       "id": "39",
       "titulo": "Cooler CPU ID-Cooling SE-914-XT ARGB",
-      "imagen": "../assets/images/productos/refrigeración/ID-COOLING-SE-914-XT.jpg",
+      "imagen": "./assets/images/productos/refrigeración/ID-COOLING-SE-914-XT.jpg",
       "categoria": {
         "nombre": "COOLERS CPU",
         "id": "coolercpu"
@@ -392,7 +392,7 @@
     {
       "id": "40",
       "titulo": "Cooler CPU Deepcool GAMMAXX L240 ARGB",
-      "imagen": "../assets/images/productos/refrigeración/DEEPCOOL-GAMMAXX-L240.jpg",
+      "imagen": "./assets/images/productos/refrigeración/DEEPCOOL-GAMMAXX-L240.jpg",
       "categoria": {
         "nombre": "COOLERS CPU",
         "id": "coolercpu"
@@ -402,7 +402,7 @@
     {
       "id": "41",
       "titulo": "Cooler CPU ASUS ROG STRIX LC120",
-      "imagen": "../assets/images/productos/refrigeración/ASUS-ROG-STRIX-LC120.jpg",
+      "imagen": "./assets/images/productos/refrigeración/ASUS-ROG-STRIX-LC120.jpg",
       "categoria": {
         "nombre": "COOLERS CPU",
         "id": "coolercpu"
@@ -412,7 +412,7 @@
     {
       "id": "42",
       "titulo": "Pasta Termica ID-Cooling ID-TG05",
-      "imagen": "../assets/images/productos/refrigeración/ID-COOLING-PASTATERMICA.jpg",
+      "imagen": "./assets/images/productos/refrigeración/ID-COOLING-PASTATERMICA.jpg",
       "categoria": {
         "nombre": "PASTA TERMICA",
         "id": "pasta"
@@ -422,7 +422,7 @@
     {
       "id": "43",
       "titulo": "Pasta Termica Cooler Master RPD Grease High Performance",
-      "imagen": "../assets/images/productos/refrigeración/COOLERMASTER-PASTATERMICA.jpg",
+      "imagen": "./assets/images/productos/refrigeración/COOLERMASTER-PASTATERMICA.jpg",
       "categoria": {
         "nombre": "PASTA TERMICA",
         "id": "pasta"
