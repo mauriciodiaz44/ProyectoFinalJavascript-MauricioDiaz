@@ -1,0 +1,22 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciodiaz44/ProyectoFinal-MauricioDiaz.git"
+  },
+  "author": "mauriciodiaz44",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriciodiaz44/ProyectoFinal-MauricioDiaz/issues"
+  },
+  "homepage": "https://github.com/mauriciodiaz44/ProyectoFinal-MauricioDiaz#readme",
+  "dependencies": {
+    "node": "^19.6.0"
+  }
+}
